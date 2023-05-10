@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../imagenes/fondoop.webp);
+}
+
+header{
+    background-color: rgba(127, 255, 212, 0.418);
+}
+
+.logo{
+    height: 40px;
+}
+
+.logo img{
+    padding: 20px;
+    width: 70px;
+    height: auto;
+}
+
+nav{
+    height: 50px;
+    text-align: end;
+}
+
+nav a{
+    text-decoration: none;
+    background-color: forestgreen;
+    border: 2px solid green;
+    color: aliceblue;
+    padding: 5px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    color: forestgreen;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 20px;
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+.video {
+    position: relative;
+    height: 400px;
+}
+.videoframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    background-color: aquamarine;
+    text-decoration: underline;
+    text-align: center;
+}
+
+li {
+    text-align: center;
+    margin: 10px;
+}
+
+ol li::marker {
+    content: "✅";
+}
+
+footer {
+    background-color: rgba(127, 255, 212, 0.418);
+}
+
+.fuente{
+    text-decoration: none;
+    background-color: forestgreen;
+    border: 2px solid green;
+    color: aliceblue;
+    margin: 1rem;
+    padding: 5px;
+}
+
+.mapa {
+    position: relative;
+    height: 350px;
+}
+
+.maps {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ig:hover {
+    color: rgb(187, 36, 116);
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+i:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+
+.redes{
+    background-color: aliceblue;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.fa-square-instagram{
+    text-align: center;
+    color: rgb(206, 41, 123);
+}
+
+.fa-square-whatsapp{
+    text-align: center;
+    color: rgb(8, 126, 8);
+}
+
+.redes i {
+    font-size: 3rem;
+}
+
+marquee {
+    color: aliceblue;
+    background-color: cornflowerblue;
+}
