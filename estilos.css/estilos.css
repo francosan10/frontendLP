@@ -12,6 +12,7 @@ header{
     padding: 10px;
     background-color: #a0d8b3d2;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -77,11 +78,12 @@ nav a:hover{
 .multimedia{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px;
+    align-content: center;
 }
 .multimedia img, iframe{
-    width: 400px;
+    width: 250px;
     height: auto;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -115,6 +117,7 @@ footer{
     padding: 10px;
     background-color: #a0d8b3d2;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
