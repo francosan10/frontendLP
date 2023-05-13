@@ -26,8 +26,8 @@ h1{
     text-decoration: none;  
 }
 .redes i{
-    width: 20px;
-    font-size: 40px;
+    width: 30px;
+    font-size: 50px;
     margin-right: 20px;
 }
 .wp{
@@ -36,7 +36,6 @@ h1{
 .fb{
     color: #3b5998;
 }
-
 .ig{
     color: #C13584;
 }
@@ -49,7 +48,6 @@ nav{
     justify-content: space-evenly;
     margin: 10px;
 }
-
 nav a{
     text-decoration: none;
     background-color: forestgreen;
@@ -58,11 +56,12 @@ nav a{
     color: aliceblue;
     font-size: medium;
 }
-
-/* Sección 1 */
-.contenedor1{
-    background-color: #25D366;
+nav a:hover{
+    color: #a0d8b3d2;
+    box-shadow: 0 0 5px 5px #a0d8b3d2;
 }
+/* Sección 1 */
+
 .principal{
     text-align: center;
     padding: 10px;
@@ -87,16 +86,71 @@ nav a{
     border-radius: 10px;
     margin-bottom: 10px;
 }
-
-
-
-
 /* Sección 2 */
 .contenedor2{
-    background-color: #3b5998;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.contenedor2 article{
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #25d3653a;
+    width: 60%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.contenedor2 article li{
+    list-style: none;
+}
+.contenedor2 h4{
+    color: forestgreen;
+    text-decoration-line: underline;
+    margin-bottom: 10px;
 }
 
 /* Footer */
 footer{
-    background-color: #C13584;
+    padding: 10px;
+    background-color: #a0d8b3d2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer iframe{
+    width: 30%;
+}
+
+.infoDev{
+    padding: 10px;
+}
+.infoDev h5, p, a{
+    margin-bottom: 10px;
+}
+.infoDev a{
+    position: fixed;
+    bottom: 35px;
+    right: 50px;
+
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: aliceblue;
+    background-color: rgb(34, 68, 161);
+}
+.infoDev a:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px 10px yellow;
+    color: rgb(34, 68, 161);
+    font-size: 20px;
+    font-weight: bold;
+}
+.redes i:hover{
+    color: aliceblue;
+}
+marquee{
+    background-color: forestgreen;
+    color: #25D366;
 }
