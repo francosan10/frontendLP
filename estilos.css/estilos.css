@@ -22,7 +22,7 @@ header{
     justify-content: space-between;
 }
 .logo{
-    width: 7vw;
+    width: 10%;
 }
 h1{
     color: forestgreen;
@@ -30,12 +30,12 @@ h1{
     font-family: "raleway";
 }
 .redes a{
-    text-decoration: none;  
+    text-decoration: none;
+    margin-right: 0.5rem;
 }
 .redes i{
     width: 5vw;
     font-size: 2.5rem;
-    margin-right: 0.5rem;
 }
 .wp{
     color: #25D366;
