@@ -22,7 +22,7 @@ header{
     justify-content: space-between;
 }
 .logo{
-    width: 10%;
+    width: 5vw;
 }
 h1{
     color: forestgreen;
@@ -31,7 +31,6 @@ h1{
 }
 .redes a{
     text-decoration: none;
-    margin-right: 0.5rem;
 }
 .redes i{
     width: 5vw;
@@ -53,7 +52,7 @@ h1{
 nav{
     display: flex;
     justify-content: space-evenly;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 nav a{
     text-decoration: none;
