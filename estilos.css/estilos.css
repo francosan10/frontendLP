@@ -3,7 +3,6 @@
     padding: 0;
 }
 body{
-    background: url(../imagenes/fondoop.webp);
     font-family: 'Roboto', sans-serif;
 }
 /* Fuente */
@@ -22,15 +21,20 @@ header{
     justify-content: space-between;
 }
 .logo{
-    width: 5vw;
+    width: 10%;
 }
 h1{
     color: forestgreen;
     font-size: 2.5rem;
     font-family: "raleway";
 }
+.redes {
+    width: 80vw;
+    margin-top: 1rem;
+}
 .redes a{
     text-decoration: none;
+    margin-right: 0.5rem;
 }
 .redes i{
     width: 5vw;
@@ -52,7 +56,7 @@ h1{
 nav{
     display: flex;
     justify-content: space-evenly;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 nav a{
     text-decoration: none;
@@ -66,8 +70,12 @@ nav a:hover{
     color: #a0d8b3d2;
     box-shadow: 0 0 5px 5px #a0d8b3d2;
 }
-/* Sección 1 */
+/* Imagen que solo aparece en mobile */
+.aparece {
+    display: none;
+}
 
+/* Sección 1 */
 .principal{
     text-align: center;
     padding: 1rem;
@@ -127,8 +135,7 @@ footer{
     background-color: #a0d8b3d2;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 footer iframe{
     width: 30vw;
@@ -166,4 +173,81 @@ marquee{
     background-color: forestgreen;
     color: #25D366;
     font-size: 1.2rem;
+}
+
+/* Media queries */
+
+/* movil */
+@media (max-width: 575px) {
+    body {
+        background: url(../imagenes/fondomovil.jpg);
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .logo {
+        display: none;
+    }
+    .aparece {
+        width: 100vw;
+        display: initial;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .aparece img {
+        width: 300px;
+        height: 300px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    footer iframe {
+        width: 80vw;
+    }
+    .redes {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+/* tablet */
+@media (min-width: 576px) and (max-width: 991px) {
+    body {
+        background: url(../imagenes/fondotablet.jpg);
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .redes {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    footer iframe {
+        width: 80vw;
+    }
+}
+/* escritorio */
+@media (min-width: 992px) {
+    body {
+        background: url(../imagenes/fondoop.webp);
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .redes {
+        width: 25vw;
+    }
 }
