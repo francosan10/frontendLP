@@ -1,129 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- SEO -->
-    <meta name="description" content="página web de recetas de cocina">
-    <meta name="keywords" content="sorrentinos, pastas, ñoquis">
-    <meta name="Author" content="Franco Mauricio Sánchez">
+    <meta name="description" content="página web de recetas de cocina" />
+    <meta name="keywords" content="sorrentinos, pastas, ñoquis" />
+    <meta name="Author" content="Franco Mauricio Sánchez" />
     <title>Página Web Potrero</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="estilos.css/estilos.css">
     <!-- Fuente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik+Dirt&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
     <!-- Fabicon -->
-    <link rel="shortcut icon" href="imagenes/logo-pasta.svg" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="imagenes/logo-pasta.svg"
+      type="image/x-icon"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css/estilos.css" />
+  </head>
+  <body>
     <header>
-        <img class="logo" src="./imagenes/logo-pasta.svg" alt="">
-        <h1>TODO PASTAS</h1>
-        <div class="redes">
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <i class="fa-brands fa-square-whatsapp wp"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa-brands fa-square-facebook fb"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-square-instagram ig"></i>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-                <i class="fa-brands fa-youtube yt"></i>
-            </a>
-        </div>
+      <img class="logo" src="./imagenes/logo-pasta.svg" alt="" />
+      <h1>TODO PASTAS</h1>
+      <div class="redes">
+        <a href="https://www.whatsapp.com/" target="_blank">
+          <i class="fa-brands fa-square-whatsapp wp"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-square-facebook fb"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-square-instagram ig"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa-brands fa-youtube yt"></i>
+        </a>
+      </div>
     </header>
 
     <nav>
-        <a href="https://www.clarin.com/recetas/platos-principales/noquis-de-leche_7_fR15ry0tsn.html" target="_blank">Receta de Ñoquis de leche</a>
-        <a href="https://www.clarin.com/recetas/platos-principales/guiso-de-lentejas-con-arroz_7_tKXkH2LOv1.html" target="_blank">Receta de Guiso de lentejas con arroz</a>
-        <a href="https://www.clarin.com/recetas/platos-principales/ravioles-espinaca_7_yjy4juyp6.html" target="_blank">Receta de Ravioles de espinaca</a>
-        <a href="https://www.clarin.com/recetas/platos-principales/tallarines-caseros-huevo_7_GLS53-xC7.html" target="_blank">Receta de Tallarines caseros al huevo</a>
+      <a
+        href="https://www.clarin.com/recetas/platos-principales/noquis-de-leche_7_fR15ry0tsn.html"
+        target="_blank"
+        >Receta de Ñoquis de leche</a
+      >
+      <a
+        href="https://www.clarin.com/recetas/platos-principales/guiso-de-lentejas-con-arroz_7_tKXkH2LOv1.html"
+        target="_blank"
+        >Receta de Guiso de lentejas con arroz</a
+      >
+      <a
+        href="https://www.clarin.com/recetas/platos-principales/ravioles-espinaca_7_yjy4juyp6.html"
+        target="_blank"
+        >Receta de Ravioles de espinaca</a
+      >
+      <a
+        href="https://www.clarin.com/recetas/platos-principales/tallarines-caseros-huevo_7_GLS53-xC7.html"
+        target="_blank"
+        >Receta de Tallarines caseros al huevo</a
+      >
     </nav>
-    
+
     <div class="aparece">
-        <img src="./imagenes/logo-pasta.svg" alt="">
+      <img src="./imagenes/logo-pasta.svg" alt="" />
     </div>
 
     <section class="contenedor1">
-        <article class="principal">
-            <h2>Receta de Sorrentinos de Calabaza</h2>
-            <h3>
-                Los sorrentinos son un tipo de pasta muy conocida y solicitada en la Argentina. A diferencia de los ravioles, que aquí se presentan en su característica forma cuadrada, los sorrentinos son un poco más grandes y redondos (como si fuera un sombrerito).
-                <br><br>
-                Su relleno puede variar y realizarse con una mezcla de jamón cocido y quesos distintos, o de ricota y el agregado de nueces picadas, también caprese. Aunque con el tiempo fue variando la receta e improvisándose con diferentes combinaciones para rellenarlos.
-            </h3>
-        </article>
-        <div class="multimedia">
-            <img src="./imagenes/paso-a-paso.jpg" alt="Plato de sorrentinos">
-            <img src="./imagenes/unsplash.jpg" alt="Plato de sorrentinos">
-            <img src="./imagenes/sorrentinos-rellenos.jpg" alt="Plato de sorrentinos">
+      <article class="principal">
+        <h2>Receta de Sorrentinos de Calabaza</h2>
+        <h3>
+          Los sorrentinos son un tipo de pasta muy conocida y solicitada en la
+          Argentina. A diferencia de los ravioles, que aquí se presentan en su
+          característica forma cuadrada, los sorrentinos son un poco más grandes
+          y redondos (como si fuera un sombrerito).
+          <br /><br />
+          Su relleno puede variar y realizarse con una mezcla de jamón cocido y
+          quesos distintos, o de ricota y el agregado de nueces picadas, también
+          caprese. Aunque con el tiempo fue variando la receta e improvisándose
+          con diferentes combinaciones para rellenarlos.
+        </h3>
+      </article>
+      <div class="multimedia">
+        <img src="./imagenes/paso-a-paso.jpg" alt="Plato de sorrentinos" />
+        <img src="./imagenes/unsplash.jpg" alt="Plato de sorrentinos" />
+        <img
+          src="./imagenes/sorrentinos-rellenos.jpg"
+          alt="Plato de sorrentinos"
+        />
 
-            <iframe src="https://www.youtube.com/embed/ABYanAkVFuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
+        <iframe
+          src="https://www.youtube.com/embed/ABYanAkVFuc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
     </section>
 
     <section class="contenedor2">
-        <article>
-            <h4>Ingredientes para la masa</h4>
-            <ul>
-                <li>300 g de harina</li>
-                <li>3 huevos</li>
-                <li>20 g de aceite de oliva</li>
-                <li>1 cucharadita de sal</li>
-            </ul>
-        </article>
-        <article>
-            <h4>Ingredientes para el relleno</h4>
-            <ul>
-                <li>500 g de calabaza</li>
-                <li>Cebolla de verdeo, a gusto</li>
-                <li>250 g de mozzarella</li>
-            </ul>
-        </article>
-        <article>
-            <h4>Preparación</h4>
-            <ol>
-                <li><b>Para la masa:</b> hacer un aro con la harina e incorporar en el centro todos los ingredientes (aceite y huevos) y comenzar a integrar todo, cuando sea necesario, de a poco incorporar agua. Una vez toda la harina integrada con los líquidos, amasar 15 minutos. La masa tiene que quedar lisa, con cuerpo. Dejarla descansar por media hora.</li>
-                <li><b>Para el relleno:</b> asar las calabazas en el horno. Cortar a la mitad, sacar las semillas y dejar con la cáscara. Condimentar con oliva, especias, ajo, hierbas frescas y salpimentar. Cocinar hasta que estén tiernas y con este tipo de cocción se genera ¡mucho sabor!</li>
-                <li>Mientras tanto, saltear una cebollita de verdeo, apenas un rehogado, para que no pierda su color. Rallar la mozzarella, o puede ser reemplazada por otro queso. Cuando se tenga todo listo y la calabaza esté fría, armar el puré e incorporar la cebolla y la mozzarella. Extraer toda el agua de la calabaza.</li>
-                <li><b>Para el armado:</b> estirar la masa, con palote o a máquina, hasta llegar a un espesor fino, pero no translúcido. Colocar la masa sobre el molde de sorrentinos, rellenar con cuchara o manga, pintar los bordes con agua y tapar con otra masa. Pasar el palote por arriba para que se puedan cortar los sorrentinos. Llevar al frío.</li>
-                <li><b>Para la cocción:</b> abundante agua y espacio en la olla. Hervir el agua, cuando llego al punto de hervor agregar las pastas. Revolver para que no decanten en el fondo de la olla y sacar a los 4 minutos si la pasta está fresca. Si está congelada, 6 a 7 minutos.</li>
-            </ol>
-        </article>
+      <article>
+        <h4>Ingredientes para la masa</h4>
+        <ul>
+          <li>300 g de harina</li>
+          <li>3 huevos</li>
+          <li>20 g de aceite de oliva</li>
+          <li>1 cucharadita de sal</li>
+        </ul>
+      </article>
+      <article>
+        <h4>Ingredientes para el relleno</h4>
+        <ul>
+          <li>500 g de calabaza</li>
+          <li>Cebolla de verdeo, a gusto</li>
+          <li>250 g de mozzarella</li>
+        </ul>
+      </article>
+      <article>
+        <h4>Preparación</h4>
+        <ol>
+          <li>
+            <b>Para la masa:</b> hacer un aro con la harina e incorporar en el
+            centro todos los ingredientes (aceite y huevos) y comenzar a
+            integrar todo, cuando sea necesario, de a poco incorporar agua. Una
+            vez toda la harina integrada con los líquidos, amasar 15 minutos. La
+            masa tiene que quedar lisa, con cuerpo. Dejarla descansar por media
+            hora.
+          </li>
+          <li>
+            <b>Para el relleno:</b> asar las calabazas en el horno. Cortar a la
+            mitad, sacar las semillas y dejar con la cáscara. Condimentar con
+            oliva, especias, ajo, hierbas frescas y salpimentar. Cocinar hasta
+            que estén tiernas y con este tipo de cocción se genera ¡mucho sabor!
+          </li>
+          <li>
+            Mientras tanto, saltear una cebollita de verdeo, apenas un rehogado,
+            para que no pierda su color. Rallar la mozzarella, o puede ser
+            reemplazada por otro queso. Cuando se tenga todo listo y la calabaza
+            esté fría, armar el puré e incorporar la cebolla y la mozzarella.
+            Extraer toda el agua de la calabaza.
+          </li>
+          <li>
+            <b>Para el armado:</b> estirar la masa, con palote o a máquina,
+            hasta llegar a un espesor fino, pero no translúcido. Colocar la masa
+            sobre el molde de sorrentinos, rellenar con cuchara o manga, pintar
+            los bordes con agua y tapar con otra masa. Pasar el palote por
+            arriba para que se puedan cortar los sorrentinos. Llevar al frío.
+          </li>
+          <li>
+            <b>Para la cocción:</b> abundante agua y espacio en la olla. Hervir
+            el agua, cuando llego al punto de hervor agregar las pastas.
+            Revolver para que no decanten en el fondo de la olla y sacar a los 4
+            minutos si la pasta está fresca. Si está congelada, 6 a 7 minutos.
+          </li>
+        </ol>
+      </article>
     </section>
 
+    <div class="container-fluid">
+      <div class="row grilla">
+
+        <div class="card col-sm-12 col-md-6 col-lg-3 ">
+          <img src="./imagenes/img-grilla/noquis.webp" class="card-img-top" alt="plato de ñoquis" />
+          <div class="card-body">
+            <h5 class="card-title">Ñoquis de leche</h5>
+            
+            <a href="https://www.clarin.com/recetas/platos-principales/noquis-de-leche_7_fR15ry0tsn.html"
+            target="_blank" class="btn btn-primary">Ir a la receta</a>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-6 col-lg-3 ">
+          <img src="./imagenes/img-grilla/guiso.webp" class="card-img-top" alt="plato de guiso" />
+          <div class="card-body">
+            <h5 class="card-title">Guiso de lentejas con arroz</h5>
+            
+            <a href="https://www.clarin.com/recetas/platos-principales/guiso-de-lentejas-con-arroz_7_tKXkH2LOv1.html"
+            target="_blank" class="btn btn-primary">Ir a la receta</a>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-6 col-lg-3 ">
+          <img src="./imagenes/img-grilla/raviol.webp" class="card-img-top" alt="plato de reviloes" />
+          <div class="card-body">
+            <h5 class="card-title">Ravioles de espinaca</h5>
+            
+            <a href="https://www.clarin.com/recetas/platos-principales/ravioles-espinaca_7_yjy4juyp6.html"
+            target="_blank" class="btn btn-primary">Ir a la receta</a>
+          </div>
+        </div>
+
+        <div class="card col-sm-12 col-md-6 col-lg-3 ">
+          <img src="./imagenes/img-grilla/tallarin.webp" class="card-img-top" alt="plato de tallarines" />
+          <div class="card-body">
+            <h5 class="card-title">Tallarines caseros</h5>
+            
+            <a href="https://www.clarin.com/recetas/platos-principales/tallarines-caseros-huevo_7_GLS53-xC7.html"
+            target="_blank" class="btn btn-primary">Ir a la receta</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0204748960577!2d-65.25945458822689!3d-26.80747667661284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d1e6e3a76eb%3A0x3d93e0a1ade3ff7d!2sMi%20Cocina%20Restaurante!5e0!3m2!1ses-419!2sar!4v1682715324380!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0204748960577!2d-65.25945458822689!3d-26.80747667661284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d1e6e3a76eb%3A0x3d93e0a1ade3ff7d!2sMi%20Cocina%20Restaurante!5e0!3m2!1ses-419!2sar!4v1682715324380!5m2!1ses-419!2sar"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
 
-        <div class="redes">
-            <a href="https://www.whatsapp.com/" target="_blank">
-                <i class="fa-brands fa-square-whatsapp wp"></i>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <i class="fa-brands fa-square-facebook fb"></i>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <i class="fa-brands fa-square-instagram ig"></i>
-            </a>
-            <a href="https://www.youtube.com/" target="_blank">
-                <i class="fa-brands fa-youtube yt"></i>
-            </a>
-        </div>
+      <div class="redes">
+        <a href="https://www.whatsapp.com/" target="_blank">
+          <i class="fa-brands fa-square-whatsapp wp"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa-brands fa-square-facebook fb"></i>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa-brands fa-square-instagram ig"></i>
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa-brands fa-youtube yt"></i>
+        </a>
+      </div>
 
-        <div class="infoDev">
-            <h5>Franco M. Sánchez</h5>
-            <p>miMail@mail.com</p>
-            <a href="https://github.com/francosan10/frontendLP" target="_blank">Git Hub 🚀</a>
-        </div>
+      <div class="infoDev">
+        <h5>Franco M. Sánchez</h5>
+        <p>miMail@mail.com</p>
+        <a href="https://github.com/francosan10/frontendLP" target="_blank"
+          >Git Hub 🚀</a
+        >
+      </div>
     </footer>
     <marquee direction="left">TP Potrero Digital LP 2023 ©</marquee>
-    <script src="https://kit.fontawesome.com/067bdf62dd.js" crossorigin="anonymous">
-    </script>
-</body>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/067bdf62dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
