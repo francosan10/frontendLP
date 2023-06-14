@@ -30,9 +30,14 @@
       crossorigin="anonymous"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="estilos.css/estilos.css" />
+    <link rel="stylesheet" href="estilos/estilos.css" />
   </head>
   <body>
+    <!-- script de bienvenida -->
+    <script>
+      alert('Bienvenido a tu página de pastas favorita 😉!')
+    </script>
+    <!-- Header -->
     <header>
       <img class="logo" src="./imagenes/logo-pasta.svg" alt="" />
       <h1>TODO PASTAS</h1>
@@ -51,43 +56,32 @@
         </a>
       </div>
     </header>
-
+    <!-- Navbar -->
     <nav>
-      <a
-        href="https://www.clarin.com/recetas/platos-principales/noquis-de-leche_7_fR15ry0tsn.html"
-        target="_blank"
-        >Receta de Ñoquis de leche</a
-      >
-      <a
-        href="https://www.clarin.com/recetas/platos-principales/guiso-de-lentejas-con-arroz_7_tKXkH2LOv1.html"
-        target="_blank"
-        >Receta de Guiso de lentejas con arroz</a
-      >
-      <a
-        href="https://www.clarin.com/recetas/platos-principales/ravioles-espinaca_7_yjy4juyp6.html"
-        target="_blank"
-        >Receta de Ravioles de espinaca</a
-      >
-      <a
-        href="https://www.clarin.com/recetas/platos-principales/tallarines-caseros-huevo_7_GLS53-xC7.html"
-        target="_blank"
-        >Receta de Tallarines caseros al huevo</a
-      >
+      <a href="https://www.clarin.com/recetas/platos-principales/noquis-de-leche_7_fR15ry0tsn.html" target="_blank">Receta de Ñoquis de leche</a>
+      <a href="https://www.clarin.com/recetas/platos-principales/guiso-de-lentejas-con-arroz_7_tKXkH2LOv1.html" target="_blank">Receta de Guiso de lentejas con arroz</a>
+      <a href="https://www.clarin.com/recetas/platos-principales/ravioles-espinaca_7_yjy4juyp6.html" target="_blank">Receta de Ravioles de espinaca</a>
+      <a href="https://www.clarin.com/recetas/platos-principales/tallarines-caseros-huevo_7_GLS53-xC7.html" target="_blank">Receta de Tallarines caseros al huevo</a>
     </nav>
-
+    <!-- Imagen que solo aparece en mobile  -->
     <div class="aparece">
-      <img src="./imagenes/logo-pasta.svg" alt="" />
+      <img src="./imagenes/logo-pasta.svg" alt=""/>
     </div>
-
+    <!-- modo oscuro -->
+    <div class="modos">
+      <button onclick="oscuro()">Dark 🌚</button>
+      <button onclick="claro()">Light 🌝</button>
+    </div>
+    <!-- Seccion 1 -->
     <section class="contenedor1">
       <article class="principal">
         <h2>Receta de Sorrentinos de Calabaza</h2>
-        <h3>
+        <h3 id="h3">
           Los sorrentinos son un tipo de pasta muy conocida y solicitada en la
           Argentina. A diferencia de los ravioles, que aquí se presentan en su
           característica forma cuadrada, los sorrentinos son un poco más grandes
           y redondos (como si fuera un sombrerito).
-          <br /><br />
+          <br/><br/>
           Su relleno puede variar y realizarse con una mezcla de jamón cocido y
           quesos distintos, o de ricota y el agregado de nueces picadas, también
           caprese. Aunque con el tiempo fue variando la receta e improvisándose
@@ -97,10 +91,7 @@
       <div class="multimedia">
         <img src="./imagenes/paso-a-paso.jpg" alt="Plato de sorrentinos" />
         <img src="./imagenes/unsplash.jpg" alt="Plato de sorrentinos" />
-        <img
-          src="./imagenes/sorrentinos-rellenos.jpg"
-          alt="Plato de sorrentinos"
-        />
+        <img src="./imagenes/sorrentinos-rellenos.jpg" alt="Plato de sorrentinos"/>
 
         <iframe
           src="https://www.youtube.com/embed/ABYanAkVFuc"
@@ -111,11 +102,11 @@
         ></iframe>
       </div>
     </section>
-
+    <!-- Seccion 2 -->
     <section class="contenedor2">
       <article>
         <h4>Ingredientes para la masa</h4>
-        <ul>
+        <ul id="ul">
           <li>300 g de harina</li>
           <li>3 huevos</li>
           <li>20 g de aceite de oliva</li>
@@ -124,7 +115,7 @@
       </article>
       <article>
         <h4>Ingredientes para el relleno</h4>
-        <ul>
+        <ul id="ul2">
           <li>500 g de calabaza</li>
           <li>Cebolla de verdeo, a gusto</li>
           <li>250 g de mozzarella</li>
@@ -132,7 +123,7 @@
       </article>
       <article>
         <h4>Preparación</h4>
-        <ol>
+        <ol id="ol">
           <li>
             <b>Para la masa:</b> hacer un aro con la harina e incorporar en el
             centro todos los ingredientes (aceite y huevos) y comenzar a
@@ -170,15 +161,14 @@
         </ol>
       </article>
     </section>
-
+    <!-- Grilla Bootstrap con cards -->
     <div class="container-fluid">
       <div class="row grilla">
 
         <div class="card col-sm-12 col-md-6 col-lg-3 ">
           <img src="./imagenes/img-grilla/noquis.webp" class="card-img-top" alt="plato de ñoquis" />
           <div class="card-body">
-            <h5 class="card-title">Ñoquis de leche</h5>
-            
+            <h5 id="t1" class="card-title">Ñoquis de leche</h5>
             <a href="https://www.clarin.com/recetas/platos-principales/noquis-de-leche_7_fR15ry0tsn.html"
             target="_blank" class="btn btn-primary">Ir a la receta</a>
           </div>
@@ -187,8 +177,7 @@
         <div class="card col-sm-12 col-md-6 col-lg-3 ">
           <img src="./imagenes/img-grilla/guiso.webp" class="card-img-top" alt="plato de guiso" />
           <div class="card-body">
-            <h5 class="card-title">Guiso de lentejas con arroz</h5>
-            
+            <h5 id="t2" class="card-title">Guiso de lentejas con arroz</h5>
             <a href="https://www.clarin.com/recetas/platos-principales/guiso-de-lentejas-con-arroz_7_tKXkH2LOv1.html"
             target="_blank" class="btn btn-primary">Ir a la receta</a>
           </div>
@@ -197,8 +186,7 @@
         <div class="card col-sm-12 col-md-6 col-lg-3 ">
           <img src="./imagenes/img-grilla/raviol.webp" class="card-img-top" alt="plato de reviloes" />
           <div class="card-body">
-            <h5 class="card-title">Ravioles de espinaca</h5>
-            
+            <h5 id="t3" class="card-title">Ravioles de espinaca</h5>
             <a href="https://www.clarin.com/recetas/platos-principales/ravioles-espinaca_7_yjy4juyp6.html"
             target="_blank" class="btn btn-primary">Ir a la receta</a>
           </div>
@@ -207,8 +195,7 @@
         <div class="card col-sm-12 col-md-6 col-lg-3 ">
           <img src="./imagenes/img-grilla/tallarin.webp" class="card-img-top" alt="plato de tallarines" />
           <div class="card-body">
-            <h5 class="card-title">Tallarines caseros</h5>
-            
+            <h5 id="t4" class="card-title">Tallarines caseros</h5>
             <a href="https://www.clarin.com/recetas/platos-principales/tallarines-caseros-huevo_7_GLS53-xC7.html"
             target="_blank" class="btn btn-primary">Ir a la receta</a>
           </div>
@@ -216,7 +203,7 @@
 
       </div>
     </div>
-
+    <!-- pie de pagina -->
     <footer>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.0204748960577!2d-65.25945458822689!3d-26.80747667661284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d1e6e3a76eb%3A0x3d93e0a1ade3ff7d!2sMi%20Cocina%20Restaurante!5e0!3m2!1ses-419!2sar!4v1682715324380!5m2!1ses-419!2sar"
@@ -245,12 +232,12 @@
       <div class="infoDev">
         <h5>Franco M. Sánchez</h5>
         <p>miMail@mail.com</p>
-        <a href="https://github.com/francosan10/frontendLP" target="_blank"
-          >Git Hub 🚀</a
-        >
+        <a href="https://github.com/francosan10/frontendLP" target="_blank">Git Hub 🚀</a>
       </div>
     </footer>
-    <marquee direction="left">TP Potrero Digital LP 2023 ©</marquee>
+    <div class="derechos">
+     <button onclick="autor()" >Copy Right &#169;</button>
+    </div>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/067bdf62dd.js"
@@ -262,5 +249,7 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <!-- javascript -->
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
